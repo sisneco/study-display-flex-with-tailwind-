@@ -60,13 +60,21 @@ export default {
 }
 
 #top-container h1 {
-  font-size: 40px;
+  font-size: 5rem;
   margin: 0;
+}
+
+#top-container p {
+  font-size: 1.5rem;
+}
+
+#top-container h2 {
+  font-size: 2.5rem;
 }
 
 .two-column {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   align-items: flex-start;
   margin-top: 10vh;
@@ -78,12 +86,16 @@ export default {
   border: #aaa 1px solid;
 }
 
-@media screen and (max-width: 767px) {
-  .two-column {
-    flex-direction: column;
-  }
-  .two-column section {
-    width: 100%;
-  }
+.responsive .two-column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsive .two-column section {
+  width: 90%;
+}
+
+.responsive .two-column:first-of-type {
+  margin-top: 0;
 }
 </style>
